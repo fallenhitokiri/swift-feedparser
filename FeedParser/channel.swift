@@ -10,44 +10,44 @@ import Foundation
 
 
 class Channel {
-    var title: String = ""
-    var link: String = ""
-    var description: String = ""
-    var language: String = ""
-    var copyright: String = ""
-    var managingEditor: String = ""
-    var webMaster: String = ""
-    var pubDate: String = ""
-    var lastBuildDate: String = ""
-    var category: String = ""
-    var generator: String = ""
-    var docs: String = ""
+    var title = ""
+    var link = ""
+    var description = ""
+    var language = ""
+    var copyright = ""
+    var managingEditor = ""
+    var webMaster = ""
+    var pubDate = ""
+    var lastBuildDate = ""
+    var category = ""
+    var generator = ""
+    var docs = ""
     var cloud: ChannelCloud = ChannelCloud()
-    var ttl: String = ""
+    var ttl = ""
     var image: ChannelImage = ChannelImage()
-    var rating: String = ""
-    var textInput: String = ""
-    var skipHours: String = ""
-    var skipDays: String = ""
+    var rating = ""
+    var textInput = ""
+    var skipHours = ""
+    var skipDays = ""
 
     var items: Array<Item> = []
 }
 
 
 class ChannelImage {
-    var title: String = ""
-    var url: String = ""
-    var link: String = ""
-    var width: String = ""
-    var height: String = ""
+    var title = ""
+    var url = ""
+    var link = ""
+    var width = ""
+    var height = ""
     var description = ""
 }
 
 
 class ChannelCloud {
-    var domain: String = ""
-    var path: String = ""
-    var port: String = ""
-    var proto: String = ""
-    var registerProdcedure: String = ""
+    var domain = ""
+    var path = ""
+    var port = ""
+    var proto = ""
+    var registerProdcedure = ""
 }

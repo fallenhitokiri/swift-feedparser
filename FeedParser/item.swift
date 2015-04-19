@@ -10,21 +10,21 @@ import Foundation
 
 
 class Item {
-    var title: String = ""
-    var link: String = ""
-    var description: String = ""
-    var author: String = ""
-    var category: String = ""
-    var comments: String = ""
+    var title = ""
+    var link = ""
+    var description = ""
+    var author = ""
+    var category = ""
+    var comments = ""
     var enclosure: ItemEnclosure = ItemEnclosure()
-    var guid: String = ""
-    var pubDate: String = ""
-    var source: String = ""
+    var guid = ""
+    var pubDate = ""
+    var source = ""
 }
 
 
 class ItemEnclosure {
-    var length: String = ""
-    var type: String = ""
-    var url: String = ""
+    var length = ""
+    var type = ""
+    var url = ""
 }

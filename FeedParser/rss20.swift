@@ -87,12 +87,12 @@ class Rss20 {
 
 extension Rss20 {
     /**
-    setChannel sets the value for an element on a channel
-    
-    :param: channel Channel to set element on
-    :param: element Element to set
-    :param: parent Parent != "" if the current element and value belong to a parent node
-    :param: value value for element
+        setChannel sets the value for an element on a channel
+        
+        :param: channel Channel to set element on
+        :param: element Element to set
+        :param: parent Parent != "" if the current element and value belong to a parent node
+        :param: value value for element
     */
     func setChannel(channel: Channel, element: String, parent: String, value: String, attributes: [NSObject: AnyObject]?) {
         if parent != "" {
@@ -153,11 +153,11 @@ extension Rss20 {
     }
     
     /**
-    channelParentImage sets the value for an channel image
-    
-    :param: item Item to set element on
-    :param: element Element to set
-    :param: value Value for element:
+        channelParentImage sets the value for an channel image
+        
+        :param: item Item to set element on
+        :param: element Element to set
+        :param: value Value for element:
     */
     func channelParentImage(channel: Channel, element: String, value: String) {
         switch element {
@@ -226,12 +226,12 @@ extension Rss20 {
 
 extension Rss20 {
     /**
-    setItem sets the value for an element on a item
-    
-    :param: item Item to set element on
-    :param: element Element to set
-    :param: parent Parent != "" if the current element and value belong to a parent node
-    :param: value Value for element:
+        setItem sets the value for an element on a item
+        
+        :param: item Item to set element on
+        :param: element Element to set
+        :param: parent Parent != "" if the current element and value belong to a parent node
+        :param: value Value for element:
     */
     func setItem(item: Item, element: String, parent: String, value: String, attributes: [NSObject: AnyObject]?) {
         switch element {
