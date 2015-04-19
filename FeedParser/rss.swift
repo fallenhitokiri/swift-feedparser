@@ -1,5 +1,5 @@
 //
-//  rss20.swift
+//  rss.swift
 //  FeedParser
 //
 //  Created by Timo Zimmermann on 18.04.15.
