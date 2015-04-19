@@ -43,6 +43,7 @@
 		252274471AE2F75C008D40C3 /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 		252274481AE2F75C008D40C3 /* rss20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rss20.swift; sourceTree = "<group>"; };
 		2522744F1AE2F882008D40C3 /* testSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testSpecs.swift; sourceTree = "<group>"; };
+		25B1E6DC1AE3BF3100733FD3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +99,7 @@
 		2522741E1AE2C6CF008D40C3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				25B1E6DC1AE3BF3100733FD3 /* README.md */,
 				2522741F1AE2C6CF008D40C3 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -437,6 +439,7 @@
 				252274331AE2C6CF008D40C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		252274341AE2C6CF008D40C3 /* Build configuration list for PBXNativeTarget "FeedParserTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +448,7 @@
 				252274361AE2C6CF008D40C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
