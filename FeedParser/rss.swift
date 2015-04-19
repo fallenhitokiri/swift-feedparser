@@ -10,9 +10,9 @@ import Foundation
 
 
 /**
-    Rss20 holds all information about the RSS 2.0 spec.
+    RSS handles the RSS 0.91, 0.92, 0.94 and 2.0 standard.
 */
-class Rss20 {
+class RSS {
     let node_channel = "channel"
     let node_item = "item"
     
@@ -85,7 +85,7 @@ class Rss20 {
 // MARK: - Channel
 
 
-extension Rss20 {
+extension RSS {
     /**
         setChannel sets the value for an element on a channel
         
@@ -224,7 +224,7 @@ extension Rss20 {
 // MARK: - Items
 
 
-extension Rss20 {
+extension RSS {
     /**
         setItem sets the value for an element on a item
         

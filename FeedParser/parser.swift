@@ -25,7 +25,7 @@ class FeedParser: NSObject {
     var currentItem: Item?
     var currentAttributes: [NSObject: AnyObject]?
     var channel: Channel = Channel()
-    var spec: Rss20?
+    var spec: RSS?
     
     override init(){}
 
@@ -75,7 +75,7 @@ class FeedParser: NSObject {
 
 extension FeedParser: NSXMLParserDelegate {
     func parserDidStartDocument(parser: NSXMLParser) {
-        self.spec = Rss20()
+        self.spec = RSS()
     }
     
     func parserDidEndDocument(parser: NSXMLParser){}
