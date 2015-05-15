@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		252274211AE2C6CF008D40C3 /* FeedParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 252274201AE2C6CF008D40C3 /* FeedParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		252274271AE2C6CF008D40C3 /* FeedParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2522741B1AE2C6CF008D40C3 /* FeedParser.framework */; };
 		2522742E1AE2C6CF008D40C3 /* parserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2522742D1AE2C6CF008D40C3 /* parserTests.swift */; };
 		252274381AE2C749008D40C3 /* parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252274371AE2C749008D40C3 /* parser.swift */; };
@@ -34,7 +33,6 @@
 /* Begin PBXFileReference section */
 		2522741B1AE2C6CF008D40C3 /* FeedParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeedParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2522741F1AE2C6CF008D40C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		252274201AE2C6CF008D40C3 /* FeedParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedParser.h; sourceTree = "<group>"; };
 		252274261AE2C6CF008D40C3 /* FeedParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2522742C1AE2C6CF008D40C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2522742D1AE2C6CF008D40C3 /* parserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parserTests.swift; sourceTree = "<group>"; };
@@ -43,6 +41,7 @@
 		252274471AE2F75C008D40C3 /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 		252274481AE2F75C008D40C3 /* rss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rss.swift; sourceTree = "<group>"; };
 		2522744F1AE2F882008D40C3 /* testSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testSpecs.swift; sourceTree = "<group>"; };
+		25459E3D1AE3ED18000F0CFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		25B1E6DC1AE3BF3100733FD3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -68,6 +67,7 @@
 		252274111AE2C6CF008D40C3 = {
 			isa = PBXGroup;
 			children = (
+				25459E3D1AE3ED18000F0CFE /* Foundation.framework */,
 				2522741D1AE2C6CF008D40C3 /* FeedParser */,
 				2522742A1AE2C6CF008D40C3 /* FeedParserTests */,
 				2522741C1AE2C6CF008D40C3 /* Products */,
@@ -86,7 +86,6 @@
 		2522741D1AE2C6CF008D40C3 /* FeedParser */ = {
 			isa = PBXGroup;
 			children = (
-				252274201AE2C6CF008D40C3 /* FeedParser.h */,
 				2522741E1AE2C6CF008D40C3 /* Supporting Files */,
 				252274371AE2C749008D40C3 /* parser.swift */,
 				252274461AE2F75C008D40C3 /* channel.swift */,
@@ -130,7 +129,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				252274211AE2C6CF008D40C3 /* FeedParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Timo Zimmermann";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

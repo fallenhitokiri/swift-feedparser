@@ -17,7 +17,7 @@ import Foundation
     Usage:
         Initialize the Parser with `init(feed:)` and call `parse()`.
 */
-class FeedParser: NSObject {
+public class FeedParser: NSObject {
     var feedURL: String?
     var data: NSData?
     var currentElement: String = ""
@@ -34,14 +34,14 @@ class FeedParser: NSObject {
     
         :param: feed Feed URL to parse
     */
-    init(feed: String) {
+    public init(feed: String) {
         self.feedURL = feed
     }
 
     /**
         loadAndParse downloads feed data and runs the parser.
     */
-    func loadAndParse() {
+    public func loadAndParse() {
         if let feedURL = self.feedURL {
             if let url = NSURL(string: feedURL) {
                 let request = NSURLRequest(URL: url)
@@ -74,13 +74,13 @@ class FeedParser: NSObject {
 
 
 extension FeedParser: NSXMLParserDelegate {
-    func parserDidStartDocument(parser: NSXMLParser) {
+    public func parserDidStartDocument(parser: NSXMLParser) {
         self.spec = RSS()
     }
     
-    func parserDidEndDocument(parser: NSXMLParser){}
+    public func parserDidEndDocument(parser: NSXMLParser){}
     
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
+    public func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
 
         if elementName == self.spec!.node_item {
             self.currentItem = Item()
@@ -94,7 +94,7 @@ extension FeedParser: NSXMLParserDelegate {
         self.currentElement = ""
         self.currentAttributes = attributeDict
     }
-    
+  public   
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
 
         // parent node is done parsing
@@ -118,11 +118,11 @@ extension FeedParser: NSXMLParserDelegate {
         }
     }
     
-    func parser(parser: NSXMLParser, foundCharacters string: String?) {
+    public func parser(parser: NSXMLParser, foundCharacters string: String?) {
         if let s = string {
             self.currentElement += s
         }
     }
     
-    func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {}
+    public func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {}
 }
