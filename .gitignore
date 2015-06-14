@@ -18,3 +18,5 @@ DerivedData
 FeedParser.xcodeproj/xcuserdata/**
 FeedParser.xcodeproj/xcuserdata/timo.xcuserdatad/xcschemes/FeedParser.xcscheme
 .DS_Store
+Output/
+_Archive/
